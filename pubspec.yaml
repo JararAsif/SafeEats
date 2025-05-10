@@ -1,0 +1,54 @@
+name: smdpro
+description: "A new Flutter project."
+
+# Prevents accidental publishing to pub.dev
+publish_to: 'none'
+
+# Version and build number
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI-related package for iOS-style icons
+  cupertino_icons: ^1.0.8
+
+  # Firebase dependencies
+  firebase_core: ^3.12.1
+  firebase_auth: ^5.5.1
+  cloud_firestore: ^5.6.5
+
+  # Additional dependencies
+  url_launcher: ^6.3.1
+  image_picker: ^1.1.2
+  google_sign_in: ^6.3.0
+  google_nav_bar: ^5.0.7
+  http: ^1.2.2
+  intl: ^0.19.0
+  overlay_support: ^2.1.0  # For top-screen notifications
+  audioplayers: ^6.1.0    # For playing sound
+  permission_handler: ^11.0.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  # Enables Material Icons
+  uses-material-design: true
+
+  # Assets section (properly indented)
+  assets:
+    - assets/google_logo.png
+    - assets/app_logo.jpg
+    - assets/ai_icon.png
+    - assets/robot_icon.jpeg
+    - assets/allergy_warning_app.png
+    - assets/food_allergy.jpeg
+    - assets/sounds/notification.mp3
