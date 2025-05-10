@@ -1,16 +1,5 @@
-# smdpro
+SafeEats is a real-time food allergy detection application built using Flutter, designed to help users identify potential allergens in food before consumption. Leveraging the power of machine learning and mobile technology, SafeEats aims to enhance food safety, especially for individuals with severe allergies.
 
-A new Flutter project.
+The app utilizes the YOLOv11 object detection model, trained and deployed via Roboflow, to analyze images of food in real time. By scanning meals through the device camera, SafeEats can detect specific allergenic ingredients with high accuracy. Detected allergens are presented to the user along with their confidence scores.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Firebase is integrated as the backend solution, providing real-time data storage, user authentication, and cloud synchronization. Detected allergen data, including merged confidence scores for repeated classes, is stored in Firestore and can be accessed across devices. Additionally, users can maintain profiles, save scan history, and personalize their allergy settings.
