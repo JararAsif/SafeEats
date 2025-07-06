@@ -94,9 +94,6 @@ class _UploadImageScreenState extends State<UploadImageScreen> {
       },
     );
 
-    const String apiKey = 'uxG5rkclgzMj25LydYOG';
-    const String modelEndpoint = 'safeeats-8ovwy/6';
-    final String url = 'https://serverless.roboflow.com/$modelEndpoint?api_key=$apiKey';
 
     try {
       final bytes = await _image!.readAsBytes();
